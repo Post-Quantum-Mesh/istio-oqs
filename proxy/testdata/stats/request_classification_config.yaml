@@ -1,0 +1,5 @@
+field_separator: ";.;"
+metrics:
+  - name: requests_total
+    dimensions:
+      response_code: istio_responseClass
