@@ -88,7 +88,7 @@ Installation Notes:
 
 9. Install istio from previous step into cluster
 
-        sudo go run ./istioctl/cmd/istioctl install
+        go run ./istioctl/cmd/istioctl install
   
 10. Label default namespace with sidecar auto-injection
 
