@@ -43,9 +43,9 @@ Installation Notes:
     - memory > 16384
     - driver=docker
 - Install and set-up [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
-- Enable bash completion for make by adding the following line to ~/.profile
+- Enable bash completion for make by running the following command
 
-       "complete -W \"\`find . -iname \"?akefil*\" | xargs -I {} grep -hoE '^[a-zA-Z0-9_.-]+:([^=]|$)' {} | sed 's/[^a-zA-Z0-9_.-]*$//' | sort -u\`\" make"
+       echo "complete -W \"\`find . -iname \"?akefil*\" | xargs -I {} grep -hoE '^[a-zA-Z0-9_.-]+:([^=]|$)' {} | sed 's/[^a-zA-Z0-9_.-]*$//' | sort -u\`\" make" >> ~/.profile
 
 1. Update package manager
 
