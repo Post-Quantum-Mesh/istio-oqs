@@ -73,10 +73,6 @@ Installation Notes:
         sudo docker run -it -w /work -v $PWD:/work drouhana/envoy-oqs:envoy bash
         make build_envoy
 
-Step 5 can be bypassed using a built istio/proxy [image](https://hub.docker.com/layers/drouhana/istio-oqs/proxy-build-dev/images/sha256-c455bea3a322b7ed1feaf82c89d4740905352c9d79bc5582e5c89a9393a8e0c2?context=repo) 
-
-    sudo docker pull drouhana/istio-oqs:proxy-build-dev
-
 6. Start minikube cluster
 
         minikube start
