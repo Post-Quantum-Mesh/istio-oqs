@@ -40,7 +40,7 @@ Installation Notes:
 - Docker engine must be installed and configured
 - Install and set-up minikube with following config parameters:
     - cpus > 4
-    - memory > 16384
+    - memory > 16384 (Note: has worked with 12000MB, but may cause [issues](https://istio.io/latest/docs/setup/platform-setup/minikube/#installation-steps)
     - driver=docker
 - Install and set-up [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 - Enable bash completion for make by running the following command
