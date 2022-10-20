@@ -136,25 +136,18 @@ Console Output: \
 
         export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
 
-19. Confirm pre-quantum curl implementation can access productpage
-
-        curl -v "http://${GATEWAY_URL}/productpage" | grep -o "<title>.*</title>"
-
-Console Output: \
-<img width="870" alt="Screen Shot 2022-10-08 at 09 52 06" src="https://user-images.githubusercontent.com/56026339/194718568-2e31d5c9-379a-462f-a617-cb0a58de03be.png">
-
-20. Confirm post-quantum curl implementation can access productpage (Note: post-quantum curl is run from a docker container. Adding the grep addendum to the end of the command will remove the verbose curl printout, so it has been left out of so the TLS output can be displayed. Console output continues beyond screenshot.)
+19. Confirm post-quantum curl implementation can access productpage
 
         sudo docker run --network host -it openquantumsafe/curl curl -k -v "http://${GATEWAY_URL}/productpage" -e SIG_ALG=dilithium3
 
 Console Output: \
 <img width="1112" alt="Screen Shot 2022-10-08 at 09 57 27" src="https://user-images.githubusercontent.com/56026339/194718796-c3f9f8d9-dd63-4616-8efc-8136991c64b6.png">
 
-21. Uninstall istio installation
+20. Uninstall istio installation
 
         samples/bookinfo/platform/kube/cleanup.sh
 
-22. Confirm clean-up
+21. Confirm clean-up
 
         kubectl get virtualservices
         kubectl get destinationrules
