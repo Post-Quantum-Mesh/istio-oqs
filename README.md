@@ -16,13 +16,13 @@ Open source implementation of quantum-resistant encryption algorithms for mesh m
 
 ### Quantum-Resistant Library/TLS Protocol
 - [liboqs](https://github.com/open-quantum-safe/liboqs)
-- [modified boringssl-liboqs fork](https://github.com/drouhana/boringssl.git)
+- [modified boringssl-liboqs fork](https://github.com/dr7ana/boringssl.git)
 - [openssl-liboqs fork](https://github.com/open-quantum-safe/openssl)
 - [openssl-1.1.1](https://github.com/openssl/openssl/tree/OpenSSL_1_1_1-stable)
 
 ### Istio Build
-- [istio/proxy-1.15.0](https://github.com/drouhana/proxy)
-- [istio/istio-1.15.0](https://github.com/drouhana/istio)
+- [istio/proxy-1.15.0](https://github.com/dr7ana/proxy)
+- [istio/istio-1.15.0](https://github.com/dr7ana/istio)
 
 
 ## Overview
@@ -63,8 +63,8 @@ Installation Notes:
 4. Clone istio repos into current directory
 
         cd /usr/local/go/src/istio.io
-        sudo git clone https://github.com/drouhana/istio.git
-        sudo git clone https://github.com/drouhana/proxy.git
+        sudo git clone https://github.com/dr7ana/istio.git
+        sudo git clone https://github.com/dr7ana/proxy.git
 
 5. Build istio/proxy using [envoy-oqs image](https://hub.docker.com/layers/drouhana/envoy-oqs/envoy/images/sha256-e779ccfd8707e31fbf3f47f1f2ac99cb52ea56f6e923a87fbb12b7fa1dbca114?context=repo) (Note: "sudo" is not needed for build_envoy command, as the previous commands opens a bash terminal as root)
 
